@@ -1,0 +1,5 @@
+# .github/CODEOWNERS
+
+# Any change in the workflow or deploy need a review
+/.github/  @wsms3c
+/deploy/   @wsms3c

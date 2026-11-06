@@ -1,0 +1,12 @@
+# pre-commit hooks verifying locally if any secrets or style problemes are being commited
+# can be ignored by --no-verify locally but the CI will still re-check everything
+
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.0
+    hooks:
+      - id: gitleaks
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.17.4
+    hooks:
+      - id: ruff
